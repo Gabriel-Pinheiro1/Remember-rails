@@ -3,7 +3,7 @@ class AnnotationsController < ApplicationController
 
   # GET /annotations or /annotations.json
   def index
-    @annotations = Annotation.all
+    @annotations = Annotation.all.paginate(page: params[:page], per_page: 5)
   end
 
   # GET /annotations/1 or /annotations/1.json

@@ -36,3 +36,5 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_annotation_path,
             :class => 'btn btn-primary' %>
+
+<%= will_paginate @annotation%>

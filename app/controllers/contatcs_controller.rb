@@ -3,7 +3,8 @@ class ContatcsController < ApplicationController
 
   # GET /contatcs or /contatcs.json
   def index
-    @contatcs = Contatc.all
+    @contatcs = Contatc.all.paginate(page: params[:page], per_page: 5)
+    
   end
 
   # GET /contatcs/1 or /contatcs/1.json

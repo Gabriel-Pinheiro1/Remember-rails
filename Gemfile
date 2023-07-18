@@ -2,7 +2,10 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.4"
+# Gem used for generate pagginations
+gem 'will_paginate', '~> 4.0'
 
+# gens for bootstrap
 gem 'mini_racer', '~> 0.6.2'
 gem "twitter-bootstrap-rails"
 
